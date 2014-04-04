@@ -1,0 +1,42 @@
+<div style="width:100%;">
+  <table class="setting-table input-table" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="first">${nls.placeholder}</td>
+        <td class="second">
+          <input type="text" data-dojo-type="dijit/form/TextBox" data-dojo-attach-point="placeholder" 
+          placeHolder="Find address or place" data-dojo-props='style:{width:"100%"}'/>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><hr></td>
+      </tr>
+      <tr>
+        <td class="first">*Url</td>
+        <td class="second">
+          <input type="text" data-dojo-type="dijit/form/ValidationTextBox" data-dojo-attach-point="url" 
+          placeHolder="http://tasks.arcgisonline.com/ArcGIS/rest/services/Locators/TA_Address_EU/GeocodeServer"
+          required="true" data-dojo-props="style:{width:'100%'}"/>
+        </td>
+      </tr>
+      <tr>
+        <td class="first">*${nls.name}</td>
+        <td class="second">
+          <input type="text" data-dojo-type="dijit/form/ValidationTextBox" data-dojo-attach-point="name" 
+          placeHolder="EU Geocoder"
+          required="true" data-dojo-props='style:{width:"100%"}'/>
+        </td>
+      </tr>
+      <tr>
+        <td class="first">*${nls.singleLineFieldName}</td>
+        <td class="second">
+          <input type="text" data-dojo-type="dijit/form/ValidationTextBox" 
+          data-dojo-attach-point="singleLineFieldName" placeHolder="Single Line Input" required="true" 
+          data-dojo-props='style:{width:"100%"}'/>
+        </td>
+      </tr>
+    </tbody>
+  </table><br>
+  <button data-dojo-type="dijit/form/Button" type="button" data-dojo-attach-event="click:add">Add</button><br>
+  <div data-dojo-attach-point="tableGeocoders"></div>
+</div>

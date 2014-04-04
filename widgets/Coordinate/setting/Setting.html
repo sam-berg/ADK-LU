@@ -1,0 +1,65 @@
+<div style="width:100%;height:100%;">
+  <div class="settings-section" data-dojo-attach-point="searchesSection">
+    <table class="setting-table input-table" cellspacing="0">
+      <tbody>
+        <tr>
+          <td class="first">${nls.outputUnit}</td>
+          <td class="second">
+            <select data-dojo-attach-point="selectOutputunit" 
+            data-dojo-type="dijit/form/Select">
+              <option value="dms" selected="selected">dms</option>
+              <option value="geo">geo</option>
+            </select>
+          </td>
+          <td class="third">
+            <span class="help-icon" title="${nls.helpText.outputUnit}"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="first">*${nls.wkid}</td>
+          <td class="second">
+            <input type="text" data-dojo-type="dijit/form/ValidationTextBox" required="true"
+            placeHolder="WKID of output spatial reference"
+            data-dojo-attach-point="wkid" data-dojo-props='style:{width:"100%"}' />
+          </td>
+          <td class="third">
+            <span class="help-icon" title="${nls.helpText.wkid}"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="first">*${nls.label}</td>
+          <td class="second">
+            <input type="text" data-dojo-type="dijit/form/ValidationTextBox" required="true"
+            placeHolder="Name of output spatial reference"
+            data-dojo-attach-point="label" data-dojo-props='style:{width:"100%"}' />
+          </td>
+          <td class="third">
+            <span class="help-icon" title="${nls.helpText.label}"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="first">${nls.transformationWkid}</td>
+          <td class="second">
+            <input type="text" data-dojo-type="dijit/form/ValidationTextBox" placeHolder="WKID of the transformation from basemap's datum to output's" 
+            data-dojo-attach-point="transformationWkid" data-dojo-props='style:{width:"100%"}' />
+          </td>
+          <td class="third">
+            <span class="help-icon" title="${nls.helpText.transformationWkid}"></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="first">${nls.transformationLabel}</td>
+          <td class="second">
+            <input type="text" data-dojo-type="dijit/form/ValidationTextBox" placeHolder="Name of the transformation" 
+            data-dojo-attach-point="transformationLabel" data-dojo-props='style:{width:"100%"}' />
+          </td>
+          <td class="third">
+            <span class="help-icon" title="${nls.helpText.transformationLabel}"></span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button data-dojo-type="dijit/form/Button" type="button" data-dojo-attach-event="click:add">${nls.add}</button><br>
+    <div data-dojo-attach-point="tableCoordinate"></div>
+  </div>
+</div>

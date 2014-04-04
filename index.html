@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>ArcGIS Web Application</title>
+		<link rel="shortcut icon" href="images/shortcut.png">
+		<style type="text/css">
+			body,html {
+			  width:100%;
+			  height:100%;
+			  margin:0;
+			  padding:0;
+			  overflow:hidden;
+			  font-family: 'Open Sans', Helvetica, Arial;
+			}
+			#main-loading{
+				width: 100%;
+				height: 100%;
+				background-color: #344357;
+				text-align: center;
+				overflow: hidden;
+
+			}
+			#main-loading .app-name{
+				font: 36px arial;
+				font-weight: bold;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -204px;
+				margin-top: -135px;
+				z-index: 2;
+			}
+			#main-loading img{
+				position: relative;
+				top: 34%;
+				height: 275px;
+				display: block;
+				margin: auto;
+			}
+			#main-loading .loading-info{
+				font: 14px 'arial';
+				margin-top: 50px;
+				overflow: hidden;
+				position: relative;
+				top: 34%;
+			}
+			#main-loading .loading-info .loading{
+				width: 260px;
+				height: 4px;
+				border-radius: 2px;
+				background-color: #192330;
+				margin: auto;
+			}
+			#main-loading .loading-info .loading-progress{
+				height: 4px;
+				border-radius: 2px;
+				background-color: white;
+			}
+
+			#main-page{
+				display: none;
+				width: 100%;
+				height: 100%;
+				position: relative;
+			}
+
+			#jimu-layout-manager{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+			}
+		</style>
+		
+	</head>
+	<body class="claro">
+		<div id="main-loading">
+			<div class="app-name">
+				<span style="color:white">ArcGIS Web Application</span>
+			</div>
+			<img src="images/loading.gif">
+			<div class="loading-info">
+				<div class="loading"></div>
+			</div>
+		</div>
+		<div id="main-page">
+			<div id="jimu-layout-manager"></div>
+		</div>		
+		<script src="env.js"></script>
+		<script src="jimu.js/simpleLoader.js"></script>
+		<script src="init.js"></script>
+	</body>
+</html>

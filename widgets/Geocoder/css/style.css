@@ -1,0 +1,15 @@
+.jimu-widget-geocoder .simpleGeocoder .esriGeocoder {
+  border: 1px solid #666;
+  opacity: 0.9;
+}
+.jimu-widget-geocoder .simpleGeocoder .esriGeocoderResults{
+  border: 1px solid #666;
+}
+.esriPopup .titlePane {
+	background-color: #5491B8;
+	border-color: #777777;
+	/*font-weight: bold;*/
+}
+.esriPopup .sizer {
+	width: 400px;
+}

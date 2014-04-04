@@ -1,0 +1,54 @@
+/* jimu-widget-coordinate-setting */
+.jimu-widget-coordinate-setting{
+  margin:0;
+  padding:0;
+  font-size:15px;
+}
+.jimu-widget-coordinate-setting .dijitSelect{
+  height: 30px;
+  width: 100%;
+}
+.jimu-widget-coordinate-setting .dijitArrowButtonContainer{
+  width: 17px;
+}
+
+.jimu-widget-coordinate-setting .zoom-scale-table{
+  margin-top:12px;
+}
+
+.jimu-widget-coordinate-setting{
+  margin:0;
+  padding:0;
+  font-size:15px;
+}
+
+.jimu-widget-coordinate-setting .setting-table > thead > tr > th,
+.jimu-widget-coordinate-setting .setting-table > tbody > tr > td{
+  height:40px;
+  line-height:40px;
+  vertical-align:middle;
+}
+
+.jimu-widget-coordinate-setting .input-table > tbody > tr > .first{
+  width:auto;
+  text-align: right;
+  padding-right:15px;
+}
+
+.jimu-widget-coordinate-setting .input-table > tbody > tr > .second{
+  width:500px;
+}
+
+.jimu-widget-coordinate-setting .setting-table .help-icon{
+  margin-left:14px;
+  display:inline-block;
+  width:16px;
+  height:16px;
+  /*background:url(images/setting_help.png) no-repeat center center;*/
+}
+
+.jimu-widget-coordinate-setting .wkid, 
+.jimu-widget-coordinate-setting .transformationWkid,
+.jimu-widget-coordinate-setting .actions{
+  width: 120px;
+}

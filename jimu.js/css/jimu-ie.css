@@ -1,0 +1,16 @@
+.jimu-navbar .jimu-icon-btn:first-child{
+  margin-left: 0;
+}
+
+.jimu-img-node .node-cover{
+  filter: alpha(opacity=25); /* IE 7 and Earlier */
+  /* Next 2 lines IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+}
+.jimu-img-node-hover .node-cover{
+  filter: alpha(opacity=0); /* IE 7 and Earlier */
+  /* Next 2 lines IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}

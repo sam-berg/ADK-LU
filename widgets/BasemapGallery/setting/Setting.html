@@ -1,0 +1,71 @@
+<div style="width:100%;">
+  <div data-dojo-attach-point="firstPage">
+  <table class="setting-table input-table" cellspacing="0">
+    <tbody>
+      <tr>
+        <td>
+          <div class='jimu-btn' data-dojo-attach-event="click:addNew"
+          style="height:30px;line-height:30px;min-width:0;padding:0 10px;float:left">${nls.add}</div>
+        </td>
+        <td style="width:300px;">${nls.showArcgisBasemaps}
+        <input style="margin-left: 10px;" data-dojo-attach-point="showArcGISBasemaps" 
+          data-dojo-type="dijit/form/CheckBox"/>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div data-dojo-attach-point="tableBasemaps"></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <div data-dojo-attach-point="secondPage" style="display:none">
+    <table class="setting-table input-table" cellspacing="0">
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <div class='jimu-btn' data-dojo-attach-event="click:gotoUrlPage"
+            style="height:30px;line-height:30px;min-width:0;padding:0 10px;float:left">${nls.back}</div>
+            <div class='jimu-btn' data-dojo-attach-event="click:saveBasemap"
+            style="height:30px;line-height:30px;min-width:0;padding:0 10px;float:left;margin-left:10px;">${nls.save}</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="first">*${nls.title}</td>
+          <td class="second">
+            <input type="text" data-dojo-type="dijit/form/ValidationTextBox" data-dojo-attach-point="title" 
+            required="true" placeHolder="World Street Map" data-dojo-props='style:{width:"100%"}'/>
+          </td>
+        </tr>
+        <tr>
+          <td class="first">${nls.thumbnail}</td>
+          <td class="second">
+            <div style="display:none"><input type="text" data-dojo-type="dijit/form/TextBox" 
+            data-dojo-attach-point="thumbnail" placeHolder="images/street.jpg"
+            data-dojo-props='style:{width:"100%"}'/></div>
+            <img src="" width="100px" height="67px" data-dojo-attach-event="click:addImage" 
+            data-dojo-attach-point="showImageChooser">&nbsp;&nbsp;&nbsp;&nbsp;(${nls.thumbnailHint})
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="setting-table input-table"><tr><td>
+      <div class='jimu-btn' data-dojo-attach-event="click:addUrl"
+            style="height:30px;line-height:30px;min-width:0;padding:0 10px;float:left">${nls.addUrl}</div>
+    </td><td class="second">
+      <input type="text" data-dojo-type="dijit/form/ValidationTextBox" data-dojo-attach-point="url" 
+            required="true" 
+            placeHolder="http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer" data-dojo-props='style:{width:"100%"}'/>
+    </td>
+    <td>
+      <div data-dojo-attach-point="checkCheckboxDiv">&nbsp;&nbsp;${nls.autoCheck}
+        <input style="margin-left: 10px;" checked data-dojo-attach-point="check" 
+          data-dojo-type="dijit/form/CheckBox"/></div>
+          <div data-dojo-attach-point="checkProcessDiv" style="display:none">
+          &nbsp;&nbsp;<img width="20px" height="20px" data-dojo-attach-point="checkImg" src=""></div>
+    </td>
+    </tr></table>
+    <br><div data-dojo-attach-point="tableUrls"></div>
+  </div>
+</div>

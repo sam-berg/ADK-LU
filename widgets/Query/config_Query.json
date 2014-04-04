@@ -1,0 +1,31 @@
+{
+  "layer": {
+    "url": "http://services.arcgis.com/XWaQZrOGjgrsZ6Cu/arcgis/rest/services/ADK_Land_Use/FeatureServer/0",
+    "expression": "LCCD = [value]",
+    "textsearchlabel": "LCCD",
+    "textsearchhint": "0",
+    "titlefield": null,
+    "linkfield": "",
+    "fields": {
+      "all": false,
+      "field": [
+        {
+          "name": "Area_ID",
+          "alias": "APA_ID"
+        },
+        {
+          "name": "TOWN_VIL",
+          "alias": "APA_Muni_Code"
+        },
+        {
+          "name": "LCCD",
+          "alias": "LCCD"
+        }
+      ]
+    }
+  },
+  "defaultValue": "",
+  "zoomscale": 10000,
+  "symbol": null,
+  "shareResult": false
+}

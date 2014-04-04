@@ -1,0 +1,119 @@
+.jimu-widget-attributetable{
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  bottom: 0px;
+  z-index: 100;
+  position: absolute;
+  background-color: white;
+}
+.jimu-widget-attributetable-move{
+  width: 100%;
+  height: 5px;
+  cursor: ns-resize;
+  top: 0px;
+  position: absolute;
+}
+
+.jimu-widget-attributetable-line{
+  width: 20px;
+  height: 1px;
+  left: 49%;
+  top: 3px;
+  position: absolute;
+  background: #B0B0B0 none;
+}
+.jimu-widget-attributetable-arrowImage{
+  width: 30px;
+  height: 30px;
+  left: 48%;
+  top: -30px;
+  position: absolute;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: ns-resize;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dijitTabPaneWrapper .dijitTabContainerTop-container .dijitAlignCenter{
+  height: 100%;
+}
+
+
+.jimu-widget-attributetable .esriAttributeTable{
+  width: 100%;
+  height: 100%; 
+  position: relative;
+}
+.jimu-widget-attributetable .esriAttributeTableToolbar{
+  width: 100%;
+  height: 30px;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+  position: relative;
+}
+.jimu-widget-attributetable .dgrid-sortable { 
+  font-weight: bold;
+}
+.jimu-widget-attributetable .dgrid-cell {
+  border-right: solid 1px #ccc;
+  width: 100px;
+}
+.jimu-widget-attributetable .dgrid-scroller {
+  margin-top: 22px !important;
+}
+.esriAttributeTableExportImage{
+  background-image: url("../images/export.png");
+  width: 13px;
+  height: 13px;
+}
+.esriAttributeTableZoomImage{
+  background-image: url("../images/zoom.png");
+  width: 13px;
+  height: 13px;
+}
+.esriAttributeTableSelectAllImage{
+  background-image: url("../images/select.png");
+  width: 13px;
+  height: 13px;
+}
+.esriAttributeTableSelectPageImage{
+  background-image: url("../images/page.png");
+  width: 13px;
+  height: 13px;
+}
+.esriAttributeTableClearImage{
+  background-image: url("../images/clear.png");
+  width: 13px;
+  height: 13px;
+}
+.esriAttributeTableOptionsImage{
+  background-image: url("../images/more.png");
+  width: 13px;
+  height: 13px;
+}
+.esriAttributeTableRefreshImage{
+  background-image: url("../images/refresh.png");
+  width: 13px;
+  height: 13px;
+}
+.esriAttributeTableSymbolImage{
+  background-image: url("../images/symbol.png");
+  width: 13px;
+  height: 13px;
+}
+.esriAttributeTableCloseImage{
+  background-image: url("../images/close.png");
+  width: 13px;
+  height: 13px;
+}
+.esriAttributeTableColumnsImage{
+  background-image: url("../images/columns.png");
+  width: 13px;
+  height: 13px;
+}

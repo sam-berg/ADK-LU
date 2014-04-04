@@ -1,0 +1,221 @@
+{
+  "theme": {
+    "name": "FoldableTheme",
+    "styles": [
+      "cyan",
+      "green",
+      "default",
+      "black"
+    ]
+  },
+  "portalUrl": "http://www.arcgis.com/",
+  "appId": "senJpIJA845L4FlP",
+  "title": "ADK Land Use Viewer",
+  "subtitle": "with ArcGIS WebApp Builder",
+  "geometryService": {
+    "url": "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer"
+  },
+  "logo": "images/app-logo.png",
+  "links": [
+    {
+      "label": "ArcGIS Online",
+      "url": "//www.arcgis.com"
+    }
+  ],
+  "preloadWidgets": {
+    "panel": {
+      "uri": "themes/FoldableTheme/panels/TitlePanel/Panel",
+      "positionRelativeTo": "map"
+    },
+    "widgets": [
+      {
+        "label": "Header Controller",
+        "uri": "widgets/HeaderController/Widget",
+        "positionRelativeTo": "browser",
+        "position": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "height": 40
+        },
+        "id": "widgets/HeaderController/Widget_1",
+        "name": "HeaderController"
+      },
+      {
+        "label": "Scalebar",
+        "uri": "widgets/Scalebar/Widget",
+        "position": {
+          "left": 25,
+          "bottom": 25
+        },
+        "id": "widgets/Scalebar/Widget_2",
+        "positionRelativeTo": "map",
+        "name": "Scalebar"
+      },
+      {
+        "uri": "widgets/Geocoder/Widget",
+        "position": {
+          "left": 45,
+          "top": 5
+        },
+        "id": "widgets/Geocoder/Widget_3",
+        "positionRelativeTo": "map",
+        "name": "Geocoder",
+        "label": "Geocoder"
+      },
+      {
+        "label": "Coordinate",
+        "uri": "widgets/Coordinate/Widget",
+        "position": {
+          "left": 200,
+          "bottom": 10
+        },
+        "id": "widgets/Coordinate/Widget_4",
+        "positionRelativeTo": "map",
+        "name": "Coordinate"
+      },
+      {
+        "position": {
+          "left": 55,
+          "top": 45,
+          "width": 400,
+          "height": 410
+        },
+        "placeholderIndex": 1,
+        "id": "_5",
+        "positionRelativeTo": "map",
+        "name": "Query",
+        "label": "Query",
+        "uri": "widgets/Query/Widget",
+        "config": "/apps/12/widgets/Query/config_Query.json"
+      },
+      {
+        "position": {
+          "left": 105,
+          "top": 45,
+          "width": 380,
+          "height": 410
+        },
+        "placeholderIndex": 1,
+        "id": "_6",
+        "positionRelativeTo": "map"
+      },
+      {
+        "position": {
+          "left": 155,
+          "top": 45,
+          "width": 380,
+          "height": 410
+        },
+        "placeholderIndex": 2,
+        "id": "_7",
+        "positionRelativeTo": "map"
+      },
+      {
+        "label": "OverviewMap",
+        "uri": "widgets/OverviewMap/Widget",
+        "position": {
+          "right": 0,
+          "bottom": 0
+        },
+        "id": "widgets/OverviewMap/Widget_8",
+        "positionRelativeTo": "map",
+        "name": "OverviewMap",
+        "config": "/apps/12/widgets/OverviewMap/config_OverviewMap.json"
+      },
+      {
+        "uri": "widgets/HomeButton/Widget",
+        "position": {
+          "left": 7,
+          "top": 75
+        },
+        "id": "widgets/HomeButton/Widget_9",
+        "positionRelativeTo": "map",
+        "name": "HomeButton",
+        "label": "Home Button"
+      },
+      {
+        "uri": "widgets/MyLocation/Widget",
+        "position": {
+          "left": 7,
+          "top": 110
+        },
+        "id": "widgets/MyLocation/Widget_10",
+        "positionRelativeTo": "map",
+        "name": "MyLocation",
+        "label": "My Location"
+      },
+      {
+        "uri": "widgets/AttributeTable/Widget",
+        "id": "widgets/AttributeTable/Widget_11",
+        "position": {
+          "left": 0,
+          "top": 0
+        },
+        "positionRelativeTo": "map",
+        "name": "AttributeTable",
+        "label": "Attribute Table"
+      }
+    ]
+  },
+  "map": {
+    "3D": false,
+    "2D": true,
+    "position": {
+      "left": 0,
+      "top": 40,
+      "right": 0,
+      "bottom": 0
+    },
+    "itemId": "4875a44db2d9468d9c77de6b83835c94",
+    "id": "map"
+  },
+  "widgetPool": {
+    "panel": {
+      "uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
+      "positionRelativeTo": "map",
+      "position": {
+        "top": 5,
+        "right": 5,
+        "bottom": 5
+      }
+    },
+    "widgets": [
+      {
+        "label": "Legend",
+        "uri": "widgets/Legend/Widget",
+        "id": "widgets/Legend/Widget_12",
+        "name": "Legend",
+        "index": 2
+      },
+      {
+        "label": "LayerList",
+        "uri": "widgets/LayerList/Widget",
+        "id": "widgets/LayerList/Widget_13",
+        "name": "LayerList",
+        "index": 3
+      },
+      {
+        "name": "BasemapGallery",
+        "label": "Basemap Gallery",
+        "uri": "widgets/BasemapGallery/Widget",
+        "index": 5,
+        "id": "widgets/BasemapGallery/Widget_14"
+      }
+    ],
+    "groups": []
+  },
+  "widgetManifestsMerged": true,
+  "geocodeService": {
+    "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer"
+  },
+  "routeService": {
+    "url": "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World"
+  },
+  "printTask": {
+    "url": "https://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task"
+  },
+  "httpProxy": "/proxy.js",
+  "bingMapsKey": "",
+  "locale": "en-us"
+}

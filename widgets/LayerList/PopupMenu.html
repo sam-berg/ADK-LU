@@ -1,0 +1,26 @@
+<div data-dojo-attach-event="onclick:_onMenuClick">
+  <div class="popup-menu-body" data-dojo-attach-point="popupMenuBody">
+    <div class="popup-menu-row" data-dojo-attach-point="zoomTo" data-dojo-attach-event="onclick:_onZoomToClick,onmouseover:_onZoomToMouseover,onmouseout:_onZoomToMouseout">${nls.itemZoomTo}</div>
+    <div class="popup-menu-row" data-dojo-attach-point="transparency" data-dojo-attach-event="onclick:_onTransparencyClick,onmouseover:_onTransparencyMouseover,onmouseout:_onTransparencyMouseout">${nls.itemTransparency}</div>
+    <!--div><input class="popup-menu-row-transparency" type="text"  data-dojo-attach-point="transparency"></div-->
+    <hr class="popup-menu-hr"/>
+    <div class="popup-menu-row" data-dojo-attach-point="moveUp" data-dojo-attach-event="onclick:_onMoveUpClick,onmouseover:_onMoveUpMouseover,onmouseout:_onMoveUpMouseout">${nls.itemMoveUp}</div>
+    <div class="popup-menu-row" data-dojo-attach-point="moveDown" data-dojo-attach-event="onclick:_onMoveDownClick,onmouseover:_onMoveDownMouseover,onmouseout:_onMoveDownMouseout">${nls.itemMoveDown}</div>
+    <hr class="popup-menu-hr"/>
+    <div class="popup-menu-row" data-dojo-attach-point="toAttributeTable" data-dojo-attach-event="onclick:_onToAttributeTableClick,onmouseover:_onToAttributeTableMouseover,onmouseout:_onToAttributeTableMouseout">${nls.itemToAttributeTable}</div>
+
+    <hr class="popup-menu-hr"/>
+    <div class="popup-menu-row" data-dojo-attach-point="description" data-dojo-attach-event="onclick:_onDescriptionClick,onmouseover:_onDescriptionMouseover,onmouseout:_onDescriptionMouseout"><a class="popup-menu-row-a" target="_blank" data-dojo-attach-point="descriptionLink" >${nls.itemDesc}</a></div>
+  </div>
+
+  <div class="popup-menu-transparency-body" data-dojo-attach-point="transparencyDiv" data-dojo-attach-event="onclick:_onTransparencyDivClick" >
+    <div class="label">
+      <div class="label-left">Opaque</div>
+      <div class="label-right">Transparent</div>
+    </div>
+    <div data-dojo-attach-point="transparencyBody"> 
+      <ol data-dojo-attach-point="transparencyRule" class="transparency-rule"> </ol>
+    </div>
+  </div>
+</div>
+
